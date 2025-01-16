@@ -1,7 +1,9 @@
+from abc import ABC, abstractmethod
 class Dzivnieks:
     def __init__(self, vards, kajas):
         self.vards = vards
         self.kajas = kajas
+    @abstractmethod
     def skanja(self):
         print("random animal noise")
     def __str__(self):
@@ -18,9 +20,13 @@ class Suns(Dzivnieks):
 class Kakjis(Dzivnieks):
     def __init__(self, vards, kajas):
         super().__init__(vards, kajas)
-        self.vards = "Minkans" + self.vards
+        self.vards = "Minkans " + self.vards
     def skanja(self):
-        print("MurMjau!")
+        print("Mur Mjau!")
+
+class Govs(Dzivnieks):
+    def skanja(self):
+        print("MUUUUUUUU!")
 
 d1 = Dzivnieks("Gauja", 4)
 d1.skanja()
@@ -41,7 +47,7 @@ dzivniekuSaraksts.append(Suns("Caps", 4))
 dzivniekuSaraksts.append(Suns("Kakjis", 3))
 dzivniekuSaraksts.append(Kakjis("Murcis", 4))
 dzivniekuSaraksts.append(Kakjis("Burkaans", 4))
-dzivniekuSaraksts.append(Dzivnieks("Gauja", 4))
+dzivniekuSaraksts.append(Govs("Gauja", 4))
 
 print("###########################################################")
 for dzivnieks in dzivniekuSaraksts:
