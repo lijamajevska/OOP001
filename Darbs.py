@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-class Dzivnieks:
+class Dzivnieks(ABC):
     def __init__(self, vards, kajas):
         self.vards = vards
         self.kajas = kajas
@@ -9,7 +9,6 @@ class Dzivnieks:
     def __str__(self):
         return f"{self.vards} un {self.kajas} kajas"
         
-
 class Suns(Dzivnieks):
     def __init__(self, vards, kajas):
         super().__init__(vards, kajas)
@@ -28,7 +27,7 @@ class Govs(Dzivnieks):
     def skanja(self):
         print("MUUUUUUUU!")
 
-d1 = Dzivnieks("Gauja", 4)
+d1 = Govs("Gauja", 4)
 d1.skanja()
 print(d1)
 d1.skanja()
