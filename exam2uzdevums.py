@@ -19,7 +19,9 @@ class VidusskolasSkolotajs(Skolotajs):
     def cikStundasKopa(self):
         self.StunduSkaitsNedela = self.pirmaisPrieksmetsStundas + self.otraisPrieksmetsStundas
         return self.stunduSkaitsNedela
+    def izvade(self):
+        print(f"Vidusskolas (tips -{self.skolotajaTips}")
 ss1 = SakumskolasSkolotajs()
 ss1.izvade()
-vs1 = VisusskolasSkolotajs()
+vs1 = VidusskolasSkolotajs()
 vs1.izvade()
