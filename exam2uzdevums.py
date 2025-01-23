@@ -22,7 +22,7 @@ class VidusskolasSkolotajs(Skolotajs):
     pirmaisPrieksmetsStundas = 0
     otraisPrieksmetsStundas = 0
     def cikStundasKopa(self):
-        self.StunduSkaitsNedela = self.pirmaisPrieksmetsStundas + self.otraisPrieksmetsStundas
+        self.stunduSkaitsNedela = self.pirmaisPrieksmetsStundas + self.otraisPrieksmetsStundas
         return self.stunduSkaitsNedela
     def ievade(self):
         self.uzvards = input("Ievadiet vidusskolas skolotāja uzvārdu ---> ")
