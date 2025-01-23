@@ -6,7 +6,7 @@ class csddTransports():
         self.pilnaMasa = 1800
         self.degvVeids = "BG"
     def izvade(self):
-        print(f"Automašīnas zīmols ir {self.zimols}, modelis {self.modelis}, reģistrācijas numurs {self.regNumurs}, pilna masa {self.pilnaMasa}, degvielas veids {self.degvVeids}")
+        print(f"Zīmols: {self.zimols} \nmodelis: {self.modelis} \nreģistrācijas numurs: {self.regNumurs} \npilna masa: {self.pilnaMasa} kg \ndegvielas veids:{self.degvVeids}")
 
 t = csddTransports()
 t.ievade()
