@@ -9,8 +9,12 @@ class kubs:
     def kubg(self):
         self.krasasNosaukums = "zaļa"
         self.malasGarums = 10
-        print(f"Kubs krāsa {self.krasasNosaukums}, kuba tiplums ir ")
-
+        print(f"Kubg krāsa {self.krasasNosaukums}, malas garums {self.malasGarums} cm")
+    def kubr(self):
+        self.krasasNosaukums = "sarkana"
+        self.malasGarums = 1
+        print(print(f"Kubr krāsa {self.krasasNosaukums}, malas garums {self.malasGarums} cm"))
+    
 
 k = kubs()
 k.ievade()
